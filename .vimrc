@@ -96,10 +96,7 @@ set backspace=indent,eol,start
 " For the gq commands
 set textwidth=80
 
-" Not working:
-set foldmethod=manual " should be syntax, but it does not work
-"set foldlevelstart=1
-"let javaScript_fold=1
+set foldmethod=indent
 
 " Search for visually selected text
 " http://vim.wikia.com/wiki/Search_for_visually_selected_text
@@ -143,3 +140,6 @@ set timeout ttimeoutlen=50
 " http://vim.wikia.com/wiki/Mapping_keys_in_Vim_-_Tutorial_(Part_1)
 nnoremap k gk
 nnoremap j gj
+
+" :h vimrc_example.vim
+map Q gq
