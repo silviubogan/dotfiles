@@ -33,6 +33,7 @@ Plugin 'Enhanced-Javascript-syntax'
 Plugin 'heavenshell/vim-jsdoc'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'majutsushi/tagbar'
+Plugin 'digitaltoad/vim-pug'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -143,3 +144,6 @@ nnoremap j gj
 
 " :h vimrc_example.vim
 map Q gq
+
+set splitbelow
+set splitright
