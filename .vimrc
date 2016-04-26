@@ -147,3 +147,6 @@ map Q gq
 
 set splitbelow
 set splitright
+
+" Use the <F3> key to save file from insert mode
+inoremap <F3> <C-o>:w<CR>
