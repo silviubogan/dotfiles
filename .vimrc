@@ -1,10 +1,12 @@
 " Inspired from https://github.com/IonicaBizau/dotfiles/blob/master/vim/.vimrc
+" and https://github.com/GhitaB/dotfiles/blob/master/.vimrc.
+"
 " This is the personal .vimrc file of Silviu Bogan.
 "
 " While much of it is beneficial for general use, I would
 " recommend picking out the parts you want and understand.
 "
-" You can find me at https://github.com/silviubogan
+" You can find me at https://github.com/silviubogan.
 "
 " Licensed under The MIT License.
 
@@ -45,6 +47,7 @@ Plugin 'digitaltoad/vim-pug'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'junegunn/vim-emoji'
+Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -77,6 +80,9 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 " First type ":" and another character after, then press
 " <C-X><C-U> like here: http://vim.wikia.com/wiki/Custom_keyword_completion
 set completefunc=emoji#complete
+
+" https://github.com/airblade/vim-gitgutter
+set updatetime=250
 
 " Who doesn't like autoindent?
 set autoindent
@@ -128,6 +134,8 @@ set foldmethod=indent
 
 " When I close a tab, remove the buffer
 set nohidden
+
+set colorcolumn=80
 
 " New Tab
 nnoremap <silent> <C-t> :tabnew<CR>
