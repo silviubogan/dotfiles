@@ -43,6 +43,8 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'majutsushi/tagbar'
 Plugin 'digitaltoad/vim-pug'
 Plugin 'Shougo/neocomplete.vim'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'junegunn/vim-emoji'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -70,6 +72,11 @@ autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+" https://github.com/junegunn/vim-emoji
+" First type ":" and another character after, then press
+" <C-X><C-U> like here: http://vim.wikia.com/wiki/Custom_keyword_completion
+set completefunc=emoji#complete
 
 " Who doesn't like autoindent?
 set autoindent
@@ -118,6 +125,12 @@ set backspace=indent,eol,start
 set textwidth=80
 
 set foldmethod=indent
+
+" When I close a tab, remove the buffer
+set nohidden
+
+" New Tab
+nnoremap <silent> <C-t> :tabnew<CR>
 
 " Search for visually selected text
 " http://vim.wikia.com/wiki/Search_for_visually_selected_text
@@ -170,3 +183,9 @@ set splitright
 
 " Use the <F3> key to save file from insert mode
 inoremap <F3> <C-o>:w<CR>
+
+" Swap ; and :. Convenient.
+nnoremap ; :
+nnoremap : ;
+
+set backupcopy=yes
