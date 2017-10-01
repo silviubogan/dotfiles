@@ -1,4 +1,12 @@
 " Inspired from https://github.com/IonicaBizau/dotfiles/blob/master/vim/.vimrc
+" This is the personal .vimrc file of Silviu Bogan.
+"
+" While much of it is beneficial for general use, I would
+" recommend picking out the parts you want and understand.
+"
+" You can find me at https://github.com/silviubogan
+"
+" Licensed under The MIT License.
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
