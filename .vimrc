@@ -48,6 +48,7 @@ Plugin 'Shougo/neocomplete.vim'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'junegunn/vim-emoji'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'vim-scripts/LargeFile'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -149,6 +150,9 @@ nmap <F8> :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 let g:tagbar_autoclose = 1
 let g:tagbar_compact = 1
+
+" https://github.com/vim-scripts/LargeFile
+let g:LargeFile = 1
 
 " http://vim.wikia.com/wiki/Switch_between_Vim_window_splits_easily
 nmap <silent> <A-Up> :wincmd k<CR>
